@@ -1,0 +1,22 @@
+.btn-primario {
+  width: 170px;
+  /* height: 50px; */
+  padding-block: 15px;
+  margin: 25px;
+
+  border-radius: 16px;
+  background-color: #e8e8e8;
+  color: #0f73b6;
+  border: 3px solid #0f73b6;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.btn-primario:hover {
+  font-weight: initial;
+  background-color: #0f73b6;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 4px 5px 17px -4px #265d91;
+}
