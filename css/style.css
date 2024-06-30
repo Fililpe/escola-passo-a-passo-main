@@ -75,10 +75,7 @@ hr {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.carrousel-container .carousel-inner img {
-  /* max-width: 30rem; */
+  width: 1;
 }
 
 .carousel-inner img {
@@ -102,10 +99,9 @@ hr {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 1;
-
   width: 100vw;
   margin-left: 1rem;
-  margin-top: 5rem;
+  margin-bottom: 1rem;
 }
 
 .slogan h1 {
@@ -120,7 +116,7 @@ hr {
 .home-video {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   height: 80vh;
   width: 100%;
@@ -445,6 +441,45 @@ footer {
   text-align: center;
 }
 
+.cookies-msg {
+  width: 80%;
+  background-color: var(--cor1);
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+}
+
+.cookies-msg .cookies-txt {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 1.5rem;
+  color: var(--cor3);
+}
+
+.cookies-msg .cookies-btn {
+  margin-inline: 20px 10px;
+}
+
+.cookies-msg .cookies-btn button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid var(--cor3);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cor3);
+  padding: 10px 20px;
+  transition: 0.2s;
+}
+
+.cookies-msg .cookies-btn button:hover {
+  background-color: var(--cor3);
+  color: var(--cor2);
+  transform: scale(1.1);
+}
+
 @media (max-width: 990px) {
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -569,5 +604,24 @@ footer {
   footer {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .cookies-msg {
+    max-height: 20vh;
+  }
+
+  .cookies-msg .cookies-txt {
+    font-size: 0.5rem;
+    padding: 0.7rem;
+  }
+
+  .cookies-msg .cookies-btn button {
+    font-size: 0.5rem;
+    font-weight: 700;
+    padding: 5px 3px;
+  }
+
+  .cookies-msg .cookies-btn {
+    margin-inline: 10px 0px;
   }
 }
